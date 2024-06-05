@@ -70,7 +70,7 @@ myPassword.onkeyup = function() {
           length.classList.add("invalid");
       }
 
-  
-      
+   
 }
+
 
