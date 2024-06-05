@@ -71,7 +71,7 @@ input[type="submit"]:hover
     padding: 20px;
     margin-top: 10px;
     letter-spacing: 0.5px;
-    animation: anime 0.5s ease-in-out;
+    animation: anime 0.8s ease-in-out;
 }
 /* animation message */
 @keyframes anime {
@@ -113,10 +113,34 @@ h3
     content: "☑";
 }
 
-@media screen and (max-width: 369) {
+@media screen and (max-width: 369px) {
     .contener
     {
+        
         width: 300px;
+        font-size: small;
+    }
+    #message{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 337px){
+
+    .contener
+    {
+        
+        width: 200px;
+        font-size: medium;
+    }
+    #message{
+        width: 200px;
+    }
+    h1{
+        font-size: small;
+    }
+    #message h3,
+    p{
         font-size: small;
     }
 }
