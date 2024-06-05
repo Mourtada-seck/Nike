@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster+Two&family=Poppins:ital,wght@0,300;0,400;0,500;1,100;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body
+{
+    background: url(img/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1
+{
+    color: #fff;
+    padding: 20px;
+   
+}
+/* le contener */
+.contener
+{
+    background-color: #fff;
+    width: 350px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px #222;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+input
+{
+    padding: 12px;
+    border: 1px solid #fff;
+    outline: 0;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+/*  le bouton Valider */
+input[type="submit"]
+{
+    background-color: #0A3D62;
+    color: #fff;
+    border: 1px solid #0A3D62;
+    border-radius: 20px 0;
+}
+input[type="submit"]:hover
+{
+    background-color: #192A56;
+}
+/* le message en dessus */
+#message
+{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 350px;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    animation: anime 0.5s ease-in-out;
+}
+/* animation message */
+@keyframes anime {
+    from{
+        transform: translateY(100px);
+    }
+}
+h3
+{
+    font-size: 15px;
+    font-weight: 400;
+}
+.message p
+{
+    margin-left: 7px;
+    padding: 7px 0;
+    font-size: 15px;
+}
+/* Si les info incorectement remplits */
+.invalid
+{
+    color: red;
+}
+.invalid:before
+{
+    position: relative;
+    left: -7px;
+    content: "☓";
+}
+/*  lowerCase valid */
+.valid
+{
+    color: green;
+}
+.valid:before
+{
+    position: relative;
+    left: -7px;
+    content: "☑";
+}
+
+@media screen and (max-width: 369) {
+    .contener
+    {
+        width: 300px;
+        font-size: small;
+    }
+}
